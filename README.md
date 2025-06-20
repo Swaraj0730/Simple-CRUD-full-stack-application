@@ -1,12 +1,46 @@
-# React + Vite
+🚀 Employee Management System
+This is a full-stack web application that enables basic employee management functionality such as listing, adding, updating, and deleting employee records.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠 Tech Stack
+Frontend: ReactJS
 
-Currently, two official plugins are available:
+Backend: Spring Boot (Java 21)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Database: MySQL
 
-## Expanding the ESLint configuration
+Security: Spring Security
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ORM: Hibernate (Spring Data JPA)
+
+Containerization: Docker & Docker Compose
+
+🧰 Features
+
+📋 View all employees
+
+➕ Add new employee
+
+🖊️ Update existing employee
+
+❌ Delete employee
+
+🔐 Secured endpoints using Spring Security
+
+🔄 Real-time updates with React state management
+
+🐳 Dockerized Setup
+MySQL is started as a container with pre-defined root password and database.
+
+Spring Boot connects to MySQL using internal Docker network (via service name mysqldb).
+
+React frontend runs on Nginx (via port 3000) and connects to the backend seamlessly.
+
+
+
+📦 Project Structure
+```
+├── backend/        # Spring Boot application
+├── frontend/       # ReactJS frontend app
+├── docker-compose.yml
+└── README.md
+```
